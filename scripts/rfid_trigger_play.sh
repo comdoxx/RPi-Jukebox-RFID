@@ -235,8 +235,8 @@ if [ "$CARDID" ]; then
             ;;
         $RECORDPLAYBACKLATEST)
             $PATHDATA/playout_controls.sh -c=recordplaybacklatest
-            ;
-	*)
+            ;;
+        *)
             # We checked if the card was a special command, seems it wasn't.
             # Now we expect it to be a trigger for one or more audio file(s).
             # Let's look at the ID, write a bit of log information and then try to play audio.
